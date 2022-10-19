@@ -6,7 +6,7 @@ import kotlin.test.assertEquals
 
 
 class FibonacciListTest {
-    private lateinit var fibonacci: FibonacciList;
+    private lateinit var fibonacci: FibonacciList
 
     @BeforeTest
     fun before(){
@@ -20,22 +20,27 @@ class FibonacciListTest {
 
     @Test
     fun `check 1 returns 0`(){
-        assertEquals(mutableListOf(0), fibonacci.fib(1))
+        assertEquals(mutableListOf<Long>(0), fibonacci.fib(1))
     }
 
     @Test
     fun `check 2 returns 0,1`(){
-        assertEquals(mutableListOf(0,1), fibonacci.fib(2))
+        assertEquals(mutableListOf<Long>(0,1), fibonacci.fib(2))
     }
 
     @Test
     fun `check 5 returns 0,1,1,2,3`(){
-        assertEquals(mutableListOf(0,1,1,2,3), fibonacci.fib(5))
+        assertEquals(mutableListOf<Long>(0,1,1,2,3), fibonacci.fib(5))
     }
 
 
     @Test
     fun `check 10 returns 0,1,1,2,3,5,8,13,21,34 list`(){
-        assertEquals(mutableListOf(0, 1, 1, 2, 3, 5, 8, 13, 21, 34), fibonacci.fib(10))
+        assertEquals(mutableListOf<Long>(0, 1, 1, 2, 3, 5, 8, 13, 21, 34), fibonacci.fib(10))
+    }
+
+    @Test
+    fun `check last record of 1 000 000 equals`(){
+        assertEquals(7006191581884273890, fibonacci.fib(1000000).last())
     }
 }

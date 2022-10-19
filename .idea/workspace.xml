@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="580f490d-db2f-4388-88b0-17dfafce56ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fibonacci/list/FibonacciList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/fibonacci/list/FibonacciListTest.kt" afterDir="false" />
+    <list default="true" id="580f490d-db2f-4388-88b0-17dfafce56ff" name="Changes" comment="Added the list takes long feature&#10;Added yield code, need to figure out how to use int here">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fibonacci/list/FibonacciList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fibonacci/list/FibonacciList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fibonacci/yield/FibonacciYield.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fibonacci/yield/FibonacciYield.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/fibonacci/list/FibonacciListTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/fibonacci/list/FibonacciListTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/fibonacci/yield/FibonacciYieldTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/fibonacci/yield/FibonacciYieldTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +20,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,8 +66,8 @@
       <recent name="fibonacci.list" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FibonacciTest.check 0 returns empty list">
-    <configuration name="FibonacciTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.FibonacciListTest">
+    <configuration name="FibonacciListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -81,7 +80,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;fibonacci.list.FibonacciTest&quot;" />
+            <option value="&quot;fibonacci.list.FibonacciListTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -91,7 +90,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FibonacciTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FibonacciListTest.check last record of 1 000 000 equals" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -104,30 +103,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;fibonacci.FibonacciTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="FibonacciTest.check 0 return 1 it fails" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;fibonacci.FibonacciTest.check 0 return 1 it fails&quot;" />
+            <option value="&quot;fibonacci.list.FibonacciListTest.check last record of 1 000 000 equals&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -160,7 +136,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'FibonacciNumbers.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FibonacciYieldTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -172,6 +148,31 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;fibonacci.yield.FibonacciYieldTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="FibonacciYieldTest.check last record of 1 000 000 equals" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;fibonacci.yield.FibonacciYieldTest.check last record of 1 000 000 equals&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -183,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FibonacciListTest" />
+        <item itemvalue="Gradle.FibonacciListTest.check last record of 1 000 000 equals" />
+        <item itemvalue="Gradle.FibonacciYieldTest.check last record of 1 000 000 equals" />
+        <item itemvalue="Gradle.FibonacciYieldTest" />
         <item itemvalue="Gradle.FibonacciTest.check 0 returns empty list" />
-        <item itemvalue="Gradle.FibonacciTest (1)" />
-        <item itemvalue="Gradle.FibonacciTest" />
-        <item itemvalue="Gradle.Tests in 'FibonacciNumbers.test'" />
-        <item itemvalue="Gradle.FibonacciTest.check 0 return 1 it fails" />
       </list>
     </recent_temporary>
   </component>
@@ -199,8 +200,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666176404571</updated>
-      <workItem from="1666176406691" duration="5054000" />
+      <workItem from="1666176406691" duration="7770000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1666188317415</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666188317415</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,5 +225,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Added the list takes long feature&#10;Added yield code, need to figure out how to use int here" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the list takes long feature&#10;Added yield code, need to figure out how to use int here" />
   </component>
 </project>
