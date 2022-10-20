@@ -6,8 +6,7 @@ class FibonacciList {
 
         val list = mutableListOf<Long>()
         for (num in 0 until input){
-            list += if(num < 2) num
-            else list.takeLast(2).sum()
+            list += if(num < 2) num else list.takeLast(2).sum()
         }
 
         return  list

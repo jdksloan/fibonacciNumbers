@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="580f490d-db2f-4388-88b0-17dfafce56ff" name="Changes" comment="Added the list takes long feature&#10;Added yield code, need to figure out how to use int here" />
+    <list default="true" id="580f490d-db2f-4388-88b0-17dfafce56ff" name="Changes" comment="Started to look at recursion">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fibonacci/recursion/FibonacciRecursion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/fibonacci/recursion/FibonacciRecursionTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fibonacci/list/FibonacciList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fibonacci/list/FibonacciList.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +66,7 @@
       <recent name="fibonacci.list" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FibonacciListTest">
+  <component name="RunManager" selected="Gradle.Tests in 'FibonacciNumbers.test'">
     <configuration name="FibonacciListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -108,7 +113,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FibonacciTest.check 0 returns empty list" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FibonacciRecursionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -121,7 +126,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;fibonacci.list.FibonacciTest.check 0 returns empty list&quot;" />
+            <option value="&quot;fibonacci.recursion.FibonacciRecursionTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -131,7 +136,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FibonacciYieldTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FibonacciRecursionTest.check 5 returns 0,1,1,2,3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -144,7 +149,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;fibonacci.yield.FibonacciYieldTest&quot;" />
+            <option value="&quot;fibonacci.recursion.FibonacciRecursionTest.check 5 returns 0,1,1,2,3&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -154,7 +159,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FibonacciYieldTest.check last record of 1 000 000 equals" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'FibonacciNumbers.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -166,8 +171,6 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;fibonacci.yield.FibonacciYieldTest.check last record of 1 000 000 equals&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -179,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'FibonacciNumbers.test'" />
+        <item itemvalue="Gradle.FibonacciRecursionTest.check 5 returns 0,1,1,2,3" />
+        <item itemvalue="Gradle.FibonacciRecursionTest" />
         <item itemvalue="Gradle.FibonacciListTest" />
         <item itemvalue="Gradle.FibonacciListTest.check last record of 1 000 000 equals" />
-        <item itemvalue="Gradle.FibonacciYieldTest.check last record of 1 000 000 equals" />
-        <item itemvalue="Gradle.FibonacciYieldTest" />
-        <item itemvalue="Gradle.FibonacciTest.check 0 returns empty list" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +198,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666176404571</updated>
-      <workItem from="1666176406691" duration="8919000" />
+      <workItem from="1666176406691" duration="14997000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1666188317415</created>
@@ -211,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666190316670</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Gradle support">
+      <created>1666192042722</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666192042722</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +241,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added the list takes long feature&#10;Added yield code, need to figure out how to use int here" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the list takes long feature&#10;Added yield code, need to figure out how to use int here" />
+    <MESSAGE value="Gradle support" />
+    <MESSAGE value="Started to look at recursion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started to look at recursion" />
   </component>
 </project>
